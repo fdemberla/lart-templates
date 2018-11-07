@@ -12,4 +12,5 @@ https://inside.dell.com/docs/DOC-275825  1.1.1 Devices Policy: 11 (page 2)
 If you have any question, please let me know.`
 
 btnCascading.addEventListener('click', function(){navigator.clipboard.writeText(template).then(function(){alert("The template is copied in your clipboard.");}, function(err){alert("No se pudo copiar el texto: ", err)})
+
 })
