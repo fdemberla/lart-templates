@@ -9,59 +9,87 @@
 </head>
 <body>
 
-<!-- ***************************
-	****************************
-	TO GET STARTED, SIMPLY COPY THE  
-	<a href="" class="btn btn-sunflower">Click Here!</a> 
-	AND LINK THE button-styles.css TO YOUR HTML PAGE. 
-	IF YOU PLAN TO USE THE ICONS & FONT (OPEN SANS) YOU'LL
-	ALSO NEED TO LINK TO THAT AS SHOWN IN THE HEAD SECTION ABOVE
-	****************************
-	****************************
--->
-
-<div class="container">
+<div class="container" id="botones">
 	<div class="row">
-		<div class="col twelve">			
-			<h1>Generic Flat Buttons - With hover & click effects</h1>
-		</div>
+
 	</div>
 
+	<!-- POSITIVE -->
 	<div class="row">
 		<div class="col three">				
-			<a href="#" class="btn btn-sunflower">Click Here!</a>			
+			<a onclick="copyText(updatingList)" href="#" class="btn btn-sea">Updating List</a>			
 		</div>
 
 		<div class="col three">
-			<a href="#" class="btn btn-dark-blue">Click Here!</a>		
+			<a onclick="copyText(retrieved)" href="#" class="btn btn-sea">Retrieved</a>		
 		</div>
 
-		<div class="col three">
-			<a href="#" class="btn btn-rouge">Click Here!</a>			
+		<div class="col four">
+			<a onclick="copyText(responseFromManager)" href="#" class="btn btn-sea">Response Received from Manager</a>			
 		</div>
-
-		<div class="col three">
-			<a href="#" class="btn btn-dark">Click Here!</a>		
-		</div>
-
 	</div>
+
+	<!-- POSITIVE -->
+
 
 	<div class="row">
 		<div class="col three">			
-			<a href="#" class="btn btn-orange">Click Here!</a>		
+			<a onclick="copyText(notReturnedYet)" href="#" class="btn btn-sunflower">Not Returned YET</a>		
 		</div>
 
 		<div class="col three">
-			<a href="#" class="btn btn-sea">Click Here!</a>					
+			<a onclick="copyText(assetUpdateRequest)" href="#" class="btn btn-sunflower">Asset Update Request</a>					
 		</div>
 
+		<div class="col four">
+			<a onclick="copyText(notAssigned)" href="#" class="btn btn-orange">Not Assigned to any single user</a>		
+		</div>
 		<div class="col three">
-			<a href="#" class="btn btn-red">Click Here!</a>		
+			<a onclick="copyText(fte)" href="#" class="btn btn-orange">Converted to FTE</a>			
+		</div>
+		<div class="col three">
+			<a onclick="copyText(notIt)" href="#" class="btn btn-orange">Not IT Owned</a>
+		</div>
+		<div class="col four">
+			<a onclick="copyText(hrSystemErr)" href="#" class="btn btn-orange">HR System Error</a>
 		</div>
 
+	</div>
+
+
+	<div class="row">
+		<div class="col four">
+			<a onclick="copyText(hostname)" href="#" class="btn btn-orange">Hostname populating in ST Field</a>
+		</div>
 		<div class="col three">
-			<a href="#" class="btn btn-concrete">Click Here!</a>			
+			<a onclick="copyText(receipt)" href="#" class="btn btn-dark-blue">Receipt Verification</a>
+		</div>
+		<div class="col three">
+			<a onclick="copyText(ownership)" href="#" class="btn btn-dark-blue">Ownership Verification</a>
 		</div>
 	</div>
+
+	<div class="row">
+		<div class="col four">
+			<a onclick="copyText(notReturned)" href="#" class="btn btn-red">Not Returned</a>
+		</div>
+		<div class="col three">
+			<a onclick="copyText(mourning)" href="#" class="btn btn-red">Mourning Consideration</a>
+		</div>
+		<div class="col three">
+			<a onclick="copyText(cascading)" href="#" class="btn btn-red">Cascading Policy</a>
+		</div>
+	</div>
+
+	<div class="row">
+			<div class="col four">
+				<a onclick="copyText(dellOnePak)" href="#" class="btn btn-concrete">Dell HROP OnePak</a>
+			</div>
+			<div class="col four">
+				<a onclick="copyText(emcOnePak)" href="#" class="btn btn-concrete">EMC Exited WFR HROP OnePak</a>
+			</div>
+	</div>
+	
+<script type="text/javascript" src='script.js' defer></script>
 </body>
 </html>
