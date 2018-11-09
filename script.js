@@ -2,7 +2,7 @@ console.log("hello world!")
 
 var templates =
 	{
-		'updatingList': `Thank you XXXXX for your quick response,\n
+		'updatingList': `Thank you XXXXX for your quick response,\n\n
 I’ve been through a high volume of emails; I’ll update our list according to your comments.`,
 		
 		'responseFromManager': `Thank you XXXX for your response.\n
