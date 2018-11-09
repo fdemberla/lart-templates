@@ -123,3 +123,5 @@ function copyText(texto){
 	.then(showNotification())
 	,function(err){alert("Text couldnt be copied: ", err)}
 }
+
+window.onload = addTitle;
