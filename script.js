@@ -1,7 +1,6 @@
 
 var templates =
 	{
-<<<<<<< HEAD
 		'UpdatingList': `Thank you XXXXX for your quick response, \n
 I’ve been through a high volume of emails; I’ll update our list according to your comments.`,
 		
@@ -9,15 +8,6 @@ I’ve been through a high volume of emails; I’ll update our list according to
 This system has been marked as Response Receive from Manager and once it is scanned by any of our resources it will be marked as Returned.
 `,
 		'Retrieved': `Thank you XXXXX for your response. \n
-=======
-		'updatingList': `Thank you XXXXX for your quick response,\n
-I’ve been through a high volume of emails; I’ll update our list according to your comments.`,
-		
-		'responseFromManager': `Thank you XXXX for your response.\n
-This system has been marked as Response Receive from Manager and once it is scanned by any of our resources it will be marked as Returned.
-`,
-		'retrieved': `Thank you XXXXX for your response.\n
->>>>>>> 7e226174821dd90924a1cc7523075239c18423a8
 The system is now marked as Returned in LART, no more actions are required regarding this asset. Thanks again!!!
 `,		
 		'NotReturnedYet': `Thank you XXXX for your response, I’ve been through a high volume of emails. \n
@@ -29,18 +19,13 @@ The system is not marked yet as returned in LART, I’ll update our list accordi
 		'NotAssigned': `Thank you XXXX for your quick response.\n
 This system will be marked as N/A since it’s not assigned to any single user per your email below, no more actions are required regarding this asset. 
 `,
-<<<<<<< HEAD
 		'Full-TimeEmployee': `Thank you XXXX for your quick response. \n
-=======
-		'fte': `Thank you XXXX for your quick response.\n
->>>>>>> 7e226174821dd90924a1cc7523075239c18423a8
 This system will be marked as N/A since the employee has been converted to FTE. No more actions are required regarding this asset.
 `, 
 		'NotOwnedByIT': `Thank you XXXX for your quick response. \n
 This system will be marked as N/A since it’s not an IT owned asset, please dismiss the original email. 
 Bottom line, our apologies for trying to collect a system not owned by IT.
 `,
-<<<<<<< HEAD
 		'HR-System-Error': `Thank you XXXX for your response. \n
 This system will be marked as N/A since this was a HR system error, per your email below.
 `,
@@ -64,31 +49,6 @@ Thanks in advance for your help.
 `,
 
 		'Not-Returned': `Thank you XXXX for your quick response. \n
-=======
-		'hrSystemErr': `Thank you XXXX for your response.\n
-This system will be marked as N/A since this was a HR system error, per your email below.
-`,
-		'hostname': `Thank you XXXXXXX for your quick response.\n
-For some reason HR records is populating some hostnames in the Service Tag field.
-`,
-		'dellOnePak': `Thank you XXXXX for your response.\n
-The system has been marked as Response Receive from Manager, HROP has been added to the thread so that team may provide the status of the OnePak for this exited employee.
-`,
-		'emcOnePak': `Thank you XXXXX for your response.\n
-This L-EMC exited employee is showing as Remote Worker, the system was most likely returned through a OnePak only if the employee was impacted by the WFR. I’ve added HROP so that team can verify whether a OnePak has been initiated for this asset and they may provide a status of this.
-`,
-
-		'ownership': `Hi XXXXXXX,\n
-Can you verify whether the XXXXX is IT owned?\n
-Thanks in advance for your help.
-`,
-
-		'receipt': `Thank you XXXX for your response.\n
-+ XXXXXXX, can you confirm whether the XXXXX has been received? It’s not marked yet as returned in LART.
-`,
-
-		'notReturned': `Thank you XXXX for your quick response.\n
->>>>>>> 7e226174821dd90924a1cc7523075239c18423a8
 There is no much we can do at this stage, I’ll mark this system as Not Returned by exited employee so HR can take further actions regarding this asset. \n
 Your cost center won't be charged since you've replied to our communication.
 `,
@@ -133,7 +93,6 @@ function copyText(texto){
 	,function(err){alert("Text couldnt be copied: ", err)}
 }
 
-<<<<<<< HEAD
 bar = document.getElementById('bar')
 body = document.getElementById('containerBotones')
 
@@ -143,6 +102,3 @@ function hideAndShow(){
 
 window.onload = createList(), createVariables(), hideAndShow();
 
-=======
-window.onload = addTitle;
->>>>>>> 7e226174821dd90924a1cc7523075239c18423a8
