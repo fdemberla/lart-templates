@@ -1,5 +1,4 @@
 # lart-templates
 
 # Check page at! 
-https://github.com/fdemberla/lart-templates
-
+https://fdemberla.github.io/lart-templates/
