@@ -62,6 +62,32 @@ Please understand that cascading an IT owned asset is against policy and this sy
 SAFE@Dell  
 https://inside.dell.com/docs/DOC-275825  1.1.1 Devices Policy: 11 (page 2)\n
 If you have any question, please let me know.
+`,
+
+'OnePakAddressRequest': `Thank you XXXX for your quick response,\n
+
+HR Ops requires the below for OnePak, please reply to ALL with the information below so HR Ops may initiate the OnePak:
+
+•	Badge:
+•	Name:
+•	Dell Federal (y/n):
+•	Quest/DSG (y/n):
+•	Legal Hold (y/n):
+•	Personal email address:
+•	Personal phone number:
+•	Personal address (cannot be a PO Box):
+•	Quantity of Notebooks:
+•	Quantity of Printers:
+•	Quantity of Monitors:
+•	Blackberry or Mobile Phone to return:
+•	Quantity of boxes for Hard Copy Documents:
+•	Any other assets or equipment such as: tablet, docking station, projector, fax machine, etc.
+
+Once this information is provided to WFR Operations, the OnePak order will be entered and an email will go directly to the affected employee.
+
+•	This email contains all the details of the order and the process for returning the assets and how to retrieve and print air bills.
+•	It will take 5-10 business days for the boxes and shipping supplies to be delivered to the home address.
+•	The employee must print their own waybills, which will be delivered to their personal e-mail address by OnePak.
 `
 
 }
