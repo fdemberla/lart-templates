@@ -19,23 +19,23 @@ The system is not marked yet as returned in LART, I’ll update our list accordi
 		'NotAssigned': `Thank you XXXX for your quick response.\n
 This system will be marked as N/A since it’s not assigned to any single user per your email below, no more actions are required regarding this asset. 
 `,
-		'Full-TimeEmployee': `Thank you XXXX for your quick response. \n
+		'FullTimeEmployee': `Thank you XXXX for your quick response. \n
 This system will be marked as N/A since the employee has been converted to FTE. No more actions are required regarding this asset.
 `, 
 		'NotOwnedByIT': `Thank you XXXX for your quick response. \n
 This system will be marked as N/A since it’s not an IT owned asset, please dismiss the original email. 
 Bottom line, our apologies for trying to collect a system not owned by IT.
 `,
-		'HR-System-Error': `Thank you XXXX for your response. \n
+		'HRSystemError': `Thank you XXXX for your response. \n
 This system will be marked as N/A since this was a HR system error, per your email below.
 `,
 		'Hostname': `Thank you XXXXXXX for your quick response. \n
 For some reason HR records is populating some hostnames in the Service Tag field.
 `,
-		'DELL-OnePak': `Thank you XXXXX for your response. \n
+		'DELLOnePak': `Thank you XXXXX for your response. \n
 The system has been marked as Response Receive from Manager, HROP has been added to the thread so that team may provide the status of the OnePak for this exited employee.
 `,
-		'L-EMC-OnePak': `Thank you XXXXX for your response. \n
+		'LEMCOnePak': `Thank you XXXXX for your response. \n
 This L-EMC exited employee is showing as Remote Worker, the system was most likely returned through a OnePak only if the employee was impacted by the WFR. I’ve added HROP so that team can verify whether a OnePak has been initiated for this asset and they may provide a status of this.
 `,
 
@@ -44,11 +44,11 @@ Can you verify whether the XXXXX is IT owned? \n
 Thanks in advance for your help.
 `,
 
-		'Confirm-if-Received': `Thank you XXXX for your response. \n
+		'ConfirmIfReceived': `Thank you XXXX for your response. \n
 + XXXXXXX, can you confirm whether the XXXXX has been received? It’s not marked yet as returned in LART.
 `,
 
-		'Not-Returned': `Thank you XXXX for your quick response. \n
+		'NotReturned': `Thank you XXXX for your quick response. \n
 There is no much we can do at this stage, I’ll mark this system as Not Returned by exited employee so HR can take further actions regarding this asset. \n
 Your cost center won't be charged since you've replied to our communication.
 `,
