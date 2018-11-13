@@ -78,7 +78,7 @@ function createList(){
 function createVariables() {
 	var contenedor = document.getElementById("containerBotones")
 	for(i=0; i<variables.length; i++){
-		contenedor.innerHTML += `<a id="${variables[i]}" data-toggle='tooltip' data-placement='bottom' onclick="copyText(templates.${variables[i]})" href="#" class="col-sm btn btn-primary">${variables[i]}</a>`								}
+		contenedor.innerHTML += `<a id="${variables[i]}" data-toggle='tooltip' data-placement='bottom' onclick="copyText(templates.${variables[i]})" href="#" class="col-sm btn btn-primary">${insertSpaces(variables[i])}</a>`								}
 	}
 
 function showNotification(){
@@ -99,6 +99,13 @@ body = document.getElementById('containerBotones')
 function hideAndShow(){
 	setTimeout(function (){body.style.display='block'; bar.style.display='none'; console.log("flip")}, 2000)
 }
+
+function insertSpaces(string) {
+    string = string.replace(/([a-z])([A-Z])/g, '$1 $2');
+    string = string.replace(/([A-Z])([A-Z][a-z])/g, '$1 $2')
+    return string;
+}
+
 
 window.onload = createList(), createVariables(), hideAndShow();
 
