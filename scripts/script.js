@@ -88,7 +88,9 @@ Once this information is provided to WFR Operations, the OnePak order will be en
 •	This email contains all the details of the order and the process for returning the assets and how to retrieve and print air bills.
 •	It will take 5-10 business days for the boxes and shipping supplies to be delivered to the home address.
 •	The employee must print their own waybills, which will be delivered to their personal e-mail address by OnePak.
-`
+`,
+
+"HrOpsOnePakUpdateRequest": `Thank you HROP,\nIs there any update regarding this OnePak (label printed by exiting team member, system dropped-off at UPS, etc)? It’s not marked yet as Returned in our Leaver DB and it’s showing as IN USE in ServiceNOW.\n`
 
 }
 
