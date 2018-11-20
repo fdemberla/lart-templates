@@ -1,139 +1,142 @@
-
-var templates =
+var listOfButtons = [
 	{
-		'UpdatingList': `Thank you XXXXX for your quick response, \n
-I’ve been through a high volume of emails; I’ll update our list according to your comments.`,
-		
-		'ResponseReceivedFromManager': `Thank you XXXX for your response. \n
-This system has been marked as Response Receive from Manager and once it is scanned by any of our resources it will be marked as Returned.
-`,
-		'Retrieved': `Thank you XXXXX for your response. \n
-The system is now marked as Returned in LART, no more actions are required regarding this asset. Thanks again!!!
-`,		
-		'NotReturnedYet': `Thank you XXXX for your response, I’ve been through a high volume of emails. \n
-The system is not marked yet as returned in LART, I’ll update our list according to your comments. Please let me know whether there is any update from the employee regarding this asset or let me know if you agree with me marking this asset as not returned by the exited employee so HR can take further actions, if so; your cost center won't be charged since you've replied to our communication.
-`,
-		'AssetUpdateRequest': `Thank you XXXX for your response, I’ve been through a high volume of emails. \n
-The system is not marked yet as returned in LART, I’ll update our list according to your comments. Please let me know whether there is any update from the employee regarding this asset or let me know if you agree with me marking this asset as not returned by the exited employee so HR can take further actions, if so; your cost center won't be charged since you've replied to our communication.
-`,
-		'NotAssigned': `Thank you XXXX for your quick response.\n
-This system will be marked as N/A since it’s not assigned to any single user per your email below, no more actions are required regarding this asset. 
-`,
-		'FullTimeEmployee': `Thank you XXXX for your quick response. \n
-This system will be marked as N/A since the employee has been converted to FTE. No more actions are required regarding this asset.
-`, 
-		'NotOwnedByIT': `Thank you XXXX for your quick response. \n
-This system will be marked as N/A since it’s not an IT owned asset, please dismiss the original email. 
-Bottom line, our apologies for trying to collect a system not owned by IT.
-`,
-		'HRSystemError': `Thank you XXXX for your response. \n
-This system will be marked as N/A since this was a HR system error, per your email below.
-`,
-		'Hostname': `Thank you XXXXXXX for your quick response. \n
-For some reason HR records is populating some hostnames in the Service Tag field.
-`,
-		'DELLOnePak': `Thank you XXXXX for your response. \n
-The system has been marked as Response Receive from Manager, HROP has been added to the thread so that team may provide the status of the OnePak for this exited employee.
-`,
-		'LEMCOnePak': `Thank you XXXXX for your response. \n
-This L-EMC exited employee is showing as Remote Worker, the system was most likely returned through a OnePak only if the employee was impacted by the WFR. I’ve added HROP so that team can verify whether a OnePak has been initiated for this asset and they may provide a status of this.
-`,
+		"name":"UpdatingList",
+		"displayName":`Updating List`,
+		"content":`Thank you XXXXX for your quick response, \n\nI’ll update our list according to your comments.`,
+		"style":`btn btn-primary`
+	},
+	{
+		"name":"ResponseReceivedFromManager",
+		"displayName":`Response Received from Manager`,
+		"content": `Thank you XXXX for your response. \n\nThis system has been marked as Response Receive from Manager and once it is scanned by any of our resources it will be marked as Returned.`,
+		"style":`btn btn-primary`
+	},
+	{	
+		"id": "CheckOwnership",
+		"content": `Hi XXXXXXX, \n\nCan you verify whether the XXXXX is IT owned? \nThanks in advance for your help.`,
+		"style": "btn btn-primary",
+		'displayName':`Check Ownership of Asset` 
+	},
+	{	
+		"id":'ConfirmIfReceived',
+		"content": `Thank you XXXX for your response. \n\n+ XXXXXXX, can you confirm whether the XXXXX has been received? It’s not marked yet as returned in LART.`,
+		"style":`btn btn-primary`,
+		'displayName': `Check if Asset was Received`
+	},
+	{
+		"name":"retrieved",
+		"displayName":`Retrieved`,
+		"content":`Thank you XXXXX for your response. \n\nThe system is now marked as Returned in LART, no more actions are required regarding this asset. Thanks again!!!`,
+		"style":`btn btn-success`
+	},
+	{
+		"name":"NotReturnedYet",
+		"displayName":`Not Returned Yet`,
+		"content":`Thank you XXXX for your response, \n\nThe system is not marked yet as returned in LART, I’ll update our list according to your comments. Please let me know whether there is any update from the employee regarding this asset or let me know if you agree with me marking this asset as not returned by the exited employee so HR can take further actions, if so; your cost center won't be charged since you've replied to our communication.`,
+		"style":`btn btn-warning`
+	},
+	{
+		"name":"notAssigned",
+		"displayName":`Not Assigned`,
+		"content":`Thank you XXXX for your quick response.\n\nThis system will be marked as N/A since it’s not assigned to any single user per your email below, no more actions are required regarding this asset. `,
+		"style":`btn btn-warning`
+	},
+	{
+		"name":"FullTimeEmployee",
+		"displayName":`Turned into Full Time Employee`,
+		"content":`Thank you XXXX for your quick response. \n\nThis system will be marked as N/A since the employee has been converted to FTE. No more actions are required regarding this asset.`,
+		"style":"btn btn-warning"
+	},
 
-		'CheckOwnership': `Hi XXXXXXX, \n
-Can you verify whether the XXXXX is IT owned? \n
-Thanks in advance for your help.
-`,
+	{		
+		"name": "NotOwnedByIT",
+		"content":`Thank you XXXX for your quick response. \n\nThis system will be marked as N/A since it’s not an IT owned asset, please dismiss the original email.\n\nBottom line, our apologies for trying to collect a system not owned by IT.`,
+		"style":"btn btn-warning",
+		'displayName':"Not Owned By IT"
+	},
+	{
+		"name":'HRSystemError',
+		"content":`Thank you XXXX for your response. \n\nThis system will be marked as N/A since this was a HR system error, per your email below.`,
+		"style":`btn btn-warning`,
+		'displayName':"HR System Error" 
+	},
+	{
+		"name":"Hostname",
+		"displayName":`Hostname in ServiceTag`,
+		"style":`btn btn-warning`,
+		'content': `Thank you XXXXXXX for your quick response. \n\nFor some reason HR records is populating some hostnames in the Service Tag field.`,
+	},
+	{
+		"id": "NotReturned",
+		"content": `Thank you XXXX for your quick response. \n\nThere is no much we can do at this stage, I’ll mark this system as Not Returned by exited employee so HR can take further actions regarding this asset. \nYour cost center won't be charged since you've replied to our communication.`,
+		"style": "btn btn-danger",
+		"displayName": `Not Returned`
+	},
+	{		
+		"id":'Mourning',
+		"content": `Hi XXXXXXXX, thank you for your quick response.\n\nI’m sorry to hear about this misfortune event, I guess there would be a period of grace for these cases considering XXXXXXX ’s family mourning.\nOur condolences to you and your team at this sad time.`,
+		"style":"btn btn-danger",
+		"displayName":'Mourning Message' 
+	},
+	{
+		"id":"Cascading",
+		"content":`This asset is supposed to be returned to IT and if another or different system is needed, then a request needs to be submitted in InfinIT. \nPlease understand that cascading an IT owned asset is against policy and this system account will be disabled at once per that policy: \n\nSAFE@Dell  \nhttps://inside.dell.com/docs/DOC-275825  1.1.1 Devices Policy: 11 (page 2)\nIf you have any question, please let me know.`,
+		"style":`btn btn-danger`,
+		"displayName":`Cascading Policy`
+	},
+	{
+		"id":'OnePakAddressRequest',
+		'content':`Thank you XXXX for your quick response,\n\nHR Ops requires the below for OnePak, please reply to ALL with the information below so HR Ops may initiate the OnePak:\n\n•	Badge:\n•	Name:\n•	Dell Federal (y/n):\n•	Quest/DSG (y/n):\n•	Legal Hold (y/n):\n•	Personal email address:\n•	Personal phone number:\n•	Personal address (cannot be a PO Box):\n•	Quantity of Notebooks:\n•	Quantity of Printers:\n•	Quantity of Monitors:\n•	Blackberry or Mobile Phone to return:\n•	Quantity of boxes for Hard Copy Documents:\n•	Any other assets or equipment such as: tablet, docking station, projector, fax machine, etc.\nOnce this information is provided to WFR Operations, the OnePak order will be entered and an email will go directly to the affected employee.\n•	This email contains all the details of the order and the process for returning the assets and how to retrieve and print air bills.\n•	It will take 5-10 business days for the boxes and shipping supplies to be delivered to the home address.\n•	The employee must print their own waybills, which will be delivered to their personal e-mail address by OnePak.`,
+		"style":`btn btn-info`,
+		'displayName':`OnePak Address Request`
+	},
+	{
+		"id": 'HrOpsOnePakUpdateRequest',
+		"content":`Thank you HROP,\n\nIs there any update regarding this OnePak (label printed by exiting team member, system dropped-off at UPS, etc)? It’s not marked yet as Returned in our Leaver DB and it’s showing as IN USE in ServiceNOW.\n`, 
+		'style':`btn btn-info`,
+		'displayName':`HROps OnePak Update Request`
+	},
+	{
+		"name":"DELLOnePak",
+		"displayName": `Dell OnePak`,
+		"content":`Thank you XXXXX for your response.\n\nThe system has been marked as Response Receive from Manager, HROP has been added to the thread so that team may provide the status of the OnePak for this exited employee.`,
+		"style":`btn btn-info`
+	},
+	{
+		"id":"LEMCOnePak",
+		"content":`Thank you XXXXX for your response. \n\nThis L-EMC exited employee is showing as Remote Worker, the system was most likely returned through a OnePak only if the employee was impacted by the WFR. I’ve added HROP so that team can verify whether a OnePak has been initiated for this asset and they may provide a status of this.`,
+		"style":`btn btn-info`,
+		"displayName":`Legacy EMC OnePak` 
+	}
+]
 
-		'ConfirmIfReceived': `Thank you XXXX for your response. \n
-+ XXXXXXX, can you confirm whether the XXXXX has been received? It’s not marked yet as returned in LART.
-`,
+bar = document.getElementById('bar')
+body = document.getElementById('containerBotones')
 
-		'NotReturned': `Thank you XXXX for your quick response. \n
-There is no much we can do at this stage, I’ll mark this system as Not Returned by exited employee so HR can take further actions regarding this asset. \n
-Your cost center won't be charged since you've replied to our communication.
-`,
-		'Mourning': `Hi XXXXXXXX, thank you for your quick response.\n
-I’m sorry to hear about this misfortune event, I guess there would be a period of grace for these cases considering XXXXXXX ’s family mourning.
-Our condolences to you and your team at this sad time.
-`,
-
-		'Cascading': `This asset is supposed to be returned to IT and if another or different system is needed, then a request needs to be submitted in InfinIT. \n
-Please understand that cascading an IT owned asset is against policy and this system account will be disabled at once per that policy: \n
-SAFE@Dell  
-https://inside.dell.com/docs/DOC-275825  1.1.1 Devices Policy: 11 (page 2)\n
-If you have any question, please let me know.
-`,
-
-'OnePakAddressRequest': `Thank you XXXX for your quick response,\n
-
-HR Ops requires the below for OnePak, please reply to ALL with the information below so HR Ops may initiate the OnePak:
-
-•	Badge:
-•	Name:
-•	Dell Federal (y/n):
-•	Quest/DSG (y/n):
-•	Legal Hold (y/n):
-•	Personal email address:
-•	Personal phone number:
-•	Personal address (cannot be a PO Box):
-•	Quantity of Notebooks:
-•	Quantity of Printers:
-•	Quantity of Monitors:
-•	Blackberry or Mobile Phone to return:
-•	Quantity of boxes for Hard Copy Documents:
-•	Any other assets or equipment such as: tablet, docking station, projector, fax machine, etc.
-
-Once this information is provided to WFR Operations, the OnePak order will be entered and an email will go directly to the affected employee.
-
-•	This email contains all the details of the order and the process for returning the assets and how to retrieve and print air bills.
-•	It will take 5-10 business days for the boxes and shipping supplies to be delivered to the home address.
-•	The employee must print their own waybills, which will be delivered to their personal e-mail address by OnePak.
-`,
-
-"HrOpsOnePakUpdateRequest": `Thank you HROP,\nIs there any update regarding this OnePak (label printed by exiting team member, system dropped-off at UPS, etc)? It’s not marked yet as Returned in our Leaver DB and it’s showing as IN USE in ServiceNOW.\n`
-
-}
-
-var variables = []
-
-function createList(){
-	for(var key in templates){
-		if(templates.hasOwnProperty(key))
-			variables.push(key)
+function getButtons(list){
+var contenedor = document.getElementById("containerBotones")
+	for(button in list){
+		contenedor.innerHTML += `<a id="${list[button].id}" data-toggle='tooltip' data-placement='bottom' onclick="copyText(listOfButtons[${[button]}].content)" class="col-sm ${list[button].style}" title='${list[button].content}'>${list[button].displayName}</a>`
+		console.log(contenedor)
 	}
 }
-
-function createVariables() {
-	var contenedor = document.getElementById("containerBotones")
-	for(i=0; i<variables.length; i++){
-		contenedor.innerHTML += `<a id="${variables[i]}" data-toggle='tooltip' data-placement='bottom' onclick="copyText(templates.${variables[i]})" href="#" class="col-sm btn btn-primary" title='${templates[variables[i]]}'>${insertSpaces(variables[i])}</a>`								}
-	}
 
 function showNotification(){
     var x = document.getElementById("snackbar");
     x.className = "show";
-    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 1500);
 }
 
-function copyText(texto){
-	navigator.clipboard.writeText(texto)
+function copyText(text){
+	navigator.clipboard.writeText(text)
 	.then(showNotification())
 	,function(err){alert("Text couldnt be copied: ", err)}
 }
 
-bar = document.getElementById('bar')
-body = document.getElementById('containerBotones')
 
 function hideAndShow(){
 	setTimeout(function (){body.style.display='block'; bar.style.display='none';}, 2000)
 }
 
-function insertSpaces(string) {
-    string = string.replace(/([a-z])([A-Z])/g, '$1 $2');
-    string = string.replace(/([A-Z])([A-Z][a-z])/g, '$1 $2')
-    return string;
-}
-
-
-window.onload = createList(), createVariables(), hideAndShow();
+window.onload = getButtons(listOfButtons), hideAndShow();
 
