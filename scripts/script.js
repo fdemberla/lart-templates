@@ -117,7 +117,6 @@ function getButtons(list){
 var contenedor = document.getElementById("containerBotones")
 	for(button in list){
 		contenedor.innerHTML += `<a id="${list[button].id}" data-toggle='tooltip' data-placement='bottom' onclick="copyText(listOfButtons[${[button]}].content)" class="col-sm ${list[button].style}" title='${list[button].content}'>${list[button].displayName}</a>`
-		console.log(contenedor)
 	}
 }
 
