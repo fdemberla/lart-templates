@@ -2,13 +2,13 @@ var listOfButtons = [
 	{
 		"name":"UpdatingList",
 		"displayName":`Updating List`,
-		"content":`Thank you XXXXX for your quick response, \n\nI’ll update our list according to your comments.`,
+		"content":`Thank you XXXXX for your response, \n\nI’ll update our list according to your comments.`,
 		"style":`btn btn-primary`
 	},
 	{
 		"name":"ResponseReceivedFromManager",
 		"displayName":`Response Received from Manager`,
-		"content": `Thank you XXXX for your response. \n\nThis system has been marked as Response Receive from Manager and once it is scanned by any of our resources it will be marked as Returned.`,
+		"content": `Thank you XXXX for your response. \n\nThis system has been marked as Response Received from Manager and once it is scanned by any of our resources it will be marked as Returned.`,
 		"style":`btn btn-primary`
 	},
 	{	
@@ -38,19 +38,19 @@ var listOfButtons = [
 	{
 		"name":"notAssigned",
 		"displayName":`Not Assigned`,
-		"content":`Thank you XXXX for your quick response.\n\nThis system will be marked as N/A since it’s not assigned to any single user per your email below, no more actions are required regarding this asset. `,
+		"content":`Thank you XXXX for your response.\n\nThis system will be marked as N/A since it’s not assigned to any single user per your email below, no more actions are required regarding this asset. `,
 		"style":`btn btn-warning`
 	},
 	{
 		"name":"FullTimeEmployee",
 		"displayName":`Turned into Full Time Employee`,
-		"content":`Thank you XXXX for your quick response. \n\nThis system will be marked as N/A since the employee has been converted to FTE. No more actions are required regarding this asset.`,
+		"content":`Thank you XXXX for your response. \n\nThis system will be marked as N/A since the employee has been converted to FTE. No more actions are required regarding this asset.`,
 		"style":"btn btn-warning"
 	},
 
 	{		
 		"name": "NotOwnedByIT",
-		"content":`Thank you XXXX for your quick response. \n\nThis system will be marked as N/A since it’s not an IT owned asset, please dismiss the original email.\n\nBottom line, our apologies for trying to collect a system not owned by IT.`,
+		"content":`Thank you XXXX for your response. \n\nThis system will be marked as N/A since it’s not an IT owned asset, please dismiss the original email.\n\nBottom line, our apologies for trying to collect a system not owned by IT.`,
 		"style":"btn btn-warning",
 		'displayName':"Not Owned By IT"
 	},
@@ -64,17 +64,17 @@ var listOfButtons = [
 		"name":"Hostname",
 		"displayName":`Hostname in ServiceTag`,
 		"style":`btn btn-warning`,
-		'content': `Thank you XXXXXXX for your quick response. \n\nFor some reason HR records is populating some hostnames in the Service Tag field.`,
+		'content': `Thank you XXXXXXX for your response. \n\nFor some reason HR records is populating some hostnames in the Service Tag field.`,
 	},
 	{
 		"id": "NotReturned",
-		"content": `Thank you XXXX for your quick response. \n\nThere is no much we can do at this stage, I’ll mark this system as Not Returned by exited employee so HR can take further actions regarding this asset. \nYour cost center won't be charged since you've replied to our communication.`,
+		"content": `Thank you XXXX for your response. \n\nThere is no much we can do at this stage, I’ll mark this system as Not Returned by exited employee so HR can take further actions regarding this asset. \nYour cost center won't be charged since you've replied to our communication.`,
 		"style": "btn btn-danger",
 		"displayName": `Not Returned`
 	},
 	{		
 		"id":'Mourning',
-		"content": `Hi XXXXXXXX, thank you for your quick response.\n\nI’m sorry to hear about this misfortune event, I guess there would be a period of grace for these cases considering XXXXXXX ’s family mourning.\nOur condolences to you and your team at this sad time.`,
+		"content": `Hi XXXXXXXX, thank you for your response.\n\nI’m sorry to hear about this misfortune event, I guess there would be a period of grace for these cases considering XXXXXXX ’s family mourning.\nOur condolences to you and your team at this sad time.`,
 		"style":"btn btn-danger",
 		"displayName":'Mourning Message' 
 	},
@@ -86,7 +86,7 @@ var listOfButtons = [
 	},
 	{
 		"id":'OnePakAddressRequest',
-		'content':`Thank you XXXX for your quick response,\n\nHR Ops requires the below for OnePak, please reply to ALL with the information below so HR Ops may initiate the OnePak:\n\n•	Badge:\n•	Name:\n•	Dell Federal (y/n):\n•	Quest/DSG (y/n):\n•	Legal Hold (y/n):\n•	Personal email address:\n•	Personal phone number:\n•	Personal address (cannot be a PO Box):\n•	Quantity of Notebooks:\n•	Quantity of Printers:\n•	Quantity of Monitors:\n•	Blackberry or Mobile Phone to return:\n•	Quantity of boxes for Hard Copy Documents:\n•	Any other assets or equipment such as: tablet, docking station, projector, fax machine, etc.\nOnce this information is provided to WFR Operations, the OnePak order will be entered and an email will go directly to the affected employee.\n•	This email contains all the details of the order and the process for returning the assets and how to retrieve and print air bills.\n•	It will take 5-10 business days for the boxes and shipping supplies to be delivered to the home address.\n•	The employee must print their own waybills, which will be delivered to their personal e-mail address by OnePak.`,
+		'content':`Thank you XXXX for your response,\n\nHR Ops requires the below for OnePak, please reply to ALL with the information below so HR Ops may initiate the OnePak:\n\n•	Badge:\n•	Name:\n•	Dell Federal (y/n):\n•	Quest/DSG (y/n):\n•	Legal Hold (y/n):\n•	Personal email address:\n•	Personal phone number:\n•	Personal address (cannot be a PO Box):\n•	Quantity of Notebooks:\n•	Quantity of Printers:\n•	Quantity of Monitors:\n•	Blackberry or Mobile Phone to return:\n•	Quantity of boxes for Hard Copy Documents:\n•	Any other assets or equipment such as: tablet, docking station, projector, fax machine, etc.\nOnce this information is provided to WFR Operations, the OnePak order will be entered and an email will go directly to the affected employee.\n•	This email contains all the details of the order and the process for returning the assets and how to retrieve and print air bills.\n•	It will take 5-10 business days for the boxes and shipping supplies to be delivered to the home address.\n•	The employee must print their own waybills, which will be delivered to their personal e-mail address by OnePak.`,
 		"style":`btn btn-info`,
 		'displayName':`OnePak Address Request`
 	},
@@ -107,6 +107,18 @@ var listOfButtons = [
 		"content":`Thank you XXXXX for your response. \n\nThis L-EMC exited employee is showing as Remote Worker, the system was most likely returned through a OnePak only if the employee was impacted by the WFR. I’ve added HROP so that team can verify whether a OnePak has been initiated for this asset and they may provide a status of this.`,
 		"style":`btn btn-info`,
 		"displayName":`Legacy EMC OnePak` 
+	},
+	{
+		"id":"FollowUp",
+		"content":`Hello XXXXXX, just following up on this. \n\nDid you managed to return the PC?`,
+		"style":`btn btn-info`,
+		"displayName":`Follow Up` 
+	},
+		{
+		"id":"FedEx",
+		"content":`Hello XXXXXX, To send the shipping label i require the following info:\n\nContact Name:\nAddress:\nPhone:\n\n`,
+		"style":`btn btn-info`,
+		"displayName":`FedEx Shipping Label` 
 	}
 ]
 
@@ -132,10 +144,9 @@ function copyText(text){
 	,function(err){alert("Text couldnt be copied: ", err)}
 }
 
-
-function hideAndShow(){
+function showLoading(){
 	setTimeout(function (){body.style.display='block'; bar.style.display='none';}, 2000)
 }
 
-window.onload = getButtons(listOfButtons), hideAndShow();
+window.onload = getButtons(listOfButtons), showLoading();
 
