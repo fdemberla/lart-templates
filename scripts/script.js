@@ -26,7 +26,7 @@ var listOfButtons = [
 	{
 		"name":"retrieved",
 		"displayName":`Retrieved`,
-		"content":`Thank you XXXXX for your response. \n\nThe system is now marked as Returned in LART, no more actions are required regarding this asset. Thanks again!!!`,
+		"content":`Thank you XXXXX for your response. \n\nThe system is now showing as Returned in LART, no more actions are required regarding this asset. Thanks again!!!`,
 		"style":`btn btn-success`
 	},
 	{
@@ -110,7 +110,7 @@ var listOfButtons = [
 	},
 	{
 		"id":"FollowUp",
-		"content":`Hello XXXXXX, just following up on this. \n\nDid you managed to return the PC?`,
+		"content":`Hello XXXXXX, just following up on this. \n\nDid you manage to return the PC?`,
 		"style":`btn btn-info`,
 		"displayName":`Follow Up` 
 	},
