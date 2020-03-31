@@ -9,7 +9,7 @@ var listOfButtons = [
     id: "RespondeCovid",
     content: `Thank you XXXXX for your response, \n\nI’ll update our list according to your comments, please stay safe at home and let me know once the system is just returned.\n`,
     style: `btn btn-primary`,
-    displayName: `Updating list - COVID`
+    displayName: `Updating List - COVID`
   },
   {
     name: "ResponseReceivedFromManager",
