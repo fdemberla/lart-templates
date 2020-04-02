@@ -92,7 +92,7 @@ var listOfButtons = [
   },
   {
     id: "ShippingOffer",
-    content: `Thank you XXXX for your response,\n\nI can make arrangements for a box with labels, I'll just need the ship from address a phone number. Please let me know if a box is needed or just a return label.\n\nThanks for your assistance.\n`,
+    content: `Thank you XXXX for your response,\n\nI can make arrangements for a box with labels, I'll just need the ship from address ***AND*** a phone number. Please let me know if a box is needed or just a return label ** and I will provide pickup scheduling instructions once the order is created.**\n\nThanks in advance for your assistance.\n`,
     style: `btn btn-info`,
     displayName: `Shipping Label Offer`
   },
@@ -116,22 +116,29 @@ var listOfButtons = [
   },
   {
     id: "OnePakCOVID",
-    content: `Thank you XXXX for your quick response,\nWe can make arrangements for a OnePak. HR Ops requires the below for OnePak, please reply to ALL with the information below so HR Ops may initiate the OnePak:\n
-	•         Badge:  
-	•         Name:  
-	•         Dell Federal (y/n):  
-	•         Quest/DSG (y/n):  
-	•         Legal Hold (y/n):  
-	•         Personal email address:  
-	•         Personal phone number:  
-	•         Personal address (cannot be a PO Box):  
-	•         Quantity of Notebooks:  
-	•         Quantity of Printers:  
-	•         Quantity of Monitors:  
-	•         Blackberry or Mobile Phone to return:  
-	•         Quantity of boxes for Hard Copy Documents:  
-	•         Any other assets or equipment such as: tablet, docking station, projector, fax machine, etc. 
-	Once the order is created the employee can schedule a pickup by going to http://www.dellreturncenter.com/pickups and entering their OnePak order information, this may help them to stay safe at home during this difficult covid-19 situation.\n`,
+    content: `Thank you XXXX for your quick response,
+
+    We can make arrangements for a OnePak and once the order is created the employee can schedule a pickup by going to http://www.dellreturncenter.com/pickups and entering their OnePak order information, this may help them to stay safe at home during this difficult covid-19 situation.
+    
+    HR Ops requires the below for OnePak, please reply to ALL with the information below so HR Ops may initiate the OnePak:
+    
+                   •         Badge:  
+                   •         Name:  
+                   •         Dell Federal (y/n):  
+                   •         Quest/DSG (y/n):  
+                   •         Legal Hold (y/n):  
+                   •         Personal email address:  
+                   •         Personal phone number:  
+                   •         Personal address (cannot be a PO Box):  
+                   •         Quantity of Notebooks:  
+                   •         Quantity of Printers:  
+                   •         Quantity of Monitors:  
+                   •         Blackberry or Mobile Phone to return:  
+                   •         Quantity of boxes for Hard Copy Documents:  
+                   •         Any other assets or equipment such as: tablet, docking station, projector, fax machine, etc. 
+    
+    Thanks in advance for your assistance.
+    `,
     style: `btn btn-info`,
     displayName: `OnePak Request - COVID`
   },
