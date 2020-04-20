@@ -12,6 +12,12 @@ var listOfButtons = [
     displayName: `Updating List - COVID`,
   },
   {
+    id: "ResponsePickUp",
+    content: `Thank you XXXXXX, all is set.\n\nXXXXXXXXXXX\n\nA pickup needs to be scheduled so the person in possession of the equipment can stay safe at home during this difficult covid-19 situation, please follow directions attached.\n\n`,
+    style: `btn btn-primary`,
+    displayName: `Pickup Schedule`,
+  },
+  {
     name: "ResponseReceivedFromManager",
     displayName: `Response Received from Manager`,
     content: `Thank you XXXX for your response. \n\nThis system has been marked as Response Received from Manager and once it is scanned by any of our resources it will be marked as Returned.`,
