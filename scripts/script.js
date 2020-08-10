@@ -183,6 +183,7 @@ var listOfButtons = [
 		content: `Thank you XXXXXX, all is set.\n\nXXXXXXXXX: going out today – may be delivered on next business day.\n\nXXXXXXXXX: a pickup needs to be scheduled so the person in possession of the equipment can stay safe at home during these difficult times, please have him / her to follow Return Shipment directions attached.\n\n`,
 		style: "btn btn-info",
 		displayName: "PickUp Schedule",
+		new: true,
 	},
 	{
 		name: "DELLOnePak",
@@ -216,7 +217,7 @@ function getButtons(list) {
       button,
     ]}].content)" class="col-sm ${list[button].style}" title='${
       list[button].content
-    }'>${list[button].displayName}</a>`;
+    }'>${list[button].displayName}{${list[button].new ? '<span class="badge badge-secondary">Secondary</span>' : ""}}</a>`;
   }
 }
 
