@@ -180,7 +180,7 @@ var listOfButtons = [
 	},
 	{
 		id: "PickUpSchedule",
-		content: `Thank you XXXXXX, all is set.\n\nXXXXXXXXX: going out today – may be delivered on next business day.\n\nXXXXXXXXX: a pickup needs to be scheduled so the person in possession of the equipment can stay safe at home during these difficult times, please have him / her have to follow Return Shipment directions attached.\n\n`,
+		content: `Thank you XXXXXX, all is set.\n\nXXXXXXXXX: going out today – may be delivered on next business day.\n\nXXXXXXXXX: a pickup needs to be scheduled so the person in possession of the equipment can stay safe at home during these difficult times, please have him / her to follow Return Shipment directions attached.\n\n`,
 		style: "btn btn-info",
 		displayName: "PickUp Schedule",
 	},
