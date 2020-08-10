@@ -217,7 +217,7 @@ function getButtons(list) {
       button,
     ]}].content)" class="col-sm ${list[button].style}" title='${
       list[button].content
-    }'>${list[button].displayName}{${list[button].new ? '<span class="badge badge-secondary">Secondary</span>' : ""}}</a>`;
+    }'>${list[button].new ? '<span class="badge badge-secondary">New</span>' : ""}${list[button].displayName}</a>`;
   }
 }
 
