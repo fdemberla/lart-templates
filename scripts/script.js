@@ -183,6 +183,12 @@ var listOfButtons = [
 		content: `Thank you XXXXXX, all is set.\n\nXXXXXXXXX: going out today – may be delivered on next business day.\n\nXXXXXXXXX: a pickup needs to be scheduled so the person in possession of the equipment can stay safe at home during these difficult times, please have him / her to follow Return Shipment directions attached.\n\n`,
 		style: "btn btn-info",
 		displayName: "PickUp Schedule",
+	},
+	{
+		name: "OnePakAlready",
+		displayName: `OnePak Already Created`,
+		content: `Thank you XXXX for your response,\n\nI’ve double-checked and a OnePak order has been already placed for this return. I’ve updated our list accordingly and will let you know once the system is marked as Returned in our Leaver Tracker.\n\n`,
+		style: `btn btn-info`,
 		new: true,
 	},
 	{
