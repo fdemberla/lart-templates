@@ -145,6 +145,13 @@ var listOfButtons = [
 		displayName: "OnePak Follow-Up",
 	},
 	{
+		id: "ONEPAKFOLLOW-UP–HRNOTIFIER",
+		content: `Thank you XXXXX for your response.\n\nThe XXXXXX was delivered to employee on XXXXX. Labels are not yet created and a pickup has not yet been scheduled for this OnePak.\n\nPlease let the exiting team member know that a pickup needs to be scheduled by going to http://www.dellreturncenter.com/pickups and entering their OnePak order information, this may help them to stay safe at home during these difficult times.\n\nIf this employee was impacted by a WFR please add the HR Notifier to the thread so he / she may have the employee to follow directions above.\n\nThanks in advance for your assistance.\n\n`,
+		style: "btn btn-primary",
+		displayName: "ONEPAK FOLLOW-UP – HR NOTIFIER",
+		new:true,
+	},
+	{
 		id: "OnePakCOVID",
 		content: `Thank you XXXX for your quick response,
 
@@ -189,7 +196,6 @@ var listOfButtons = [
 		displayName: `OnePak Already Created`,
 		content: `Thank you XXXX for your response,\n\nI’ve double-checked and a OnePak order has been already placed for this return. I’ve updated our list accordingly and will let you know once the system is marked as Returned in our Leaver Tracker.\n\n`,
 		style: `btn btn-info`,
-		new: true,
 	},
 	{
 		name: "DELLOnePak",
