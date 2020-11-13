@@ -54,6 +54,13 @@ var listOfButtons = [
 		style: `btn btn-success`,
 	},
 	{
+		name: "retrievedfollow",
+		displayName: `Retrieved Update`,
+		new: true,
+		content: `Hi XXXX, just FYI... \n\nThe system is now showing as Returned in LART, no more actions are required regarding this asset. Thanks again!!!`,
+		style: `btn btn-success`,
+	},
+	{
 		name: "NotReturnedYet",
 		displayName: `Not Returned Yet`,
 		content: `Thank you XXXX for your response, \n\nThe system is not marked yet as returned in LART, I’ll update our list according to your comments. Please let me know whether there is any update from the employee regarding this asset or let me know if you agree with me marking this asset as not returned by the exited employee so HR can take further actions, if so; your cost center won't be charged since you've replied to our communication.`,
@@ -149,7 +156,7 @@ var listOfButtons = [
 		content: `Thank you XXXXX for your response.\n\nThe XXXXXX was delivered to employee on XXXXX. Labels are not yet created and a pickup has not yet been scheduled for this OnePak.\n\nPlease let the exiting team member know that a pickup needs to be scheduled by going to http://www.dellreturncenter.com/pickups and entering their OnePak order information, this may help them to stay safe at home during these difficult times.\n\nIf this employee was impacted by a WFR please add the HR Notifier to the thread so he / she may have the employee to follow directions above.\n\nThanks in advance for your assistance.\n\n`,
 		style: "btn btn-primary",
 		displayName: "ONEPAK FOLLOW-UP – HR NOTIFIER",
-		new:true,
+		new: true,
 	},
 	{
 		id: "OnePakCOVID",
