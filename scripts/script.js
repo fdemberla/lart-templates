@@ -147,9 +147,16 @@ var listOfButtons = [
   },
   {
     id: "OnePakFollowUp",
-    content: `Thank you XXXXX for your response.\n\nThe XXXXXX was delivered to employee on XXXXX. Labels are not yet created and a pickup has not yet been scheduled for this OnePak.\n\nPlease let the exiting team member know that a pickup needs to be scheduled by going to http://www.dellreturncenter.com/pickups and entering their OnePak order information, this may help them to stay safe at home during this difficult covid-19 situation.\n\nThanks in advance for your assistance.`,
+    content: `Thank you XXXXX for your response.\n\nI’ve double-checked. The order # XXXXXX is showing as delivered to XXXXXX on XXXXX. Labels are not yet printed by the employee and a pickup has not yet been scheduled for this OnePak.\n\nPlease let the exiting team member know that the return labels needs to be printed following directions emailed by OnePak and a pickup needs to be scheduled by going to http://www.dellreturncenter.com/pickups and entering their OnePak order information, this may help them to stay safe at home during these difficult times.\n\nThanks in advance for your assistance.\n`,
     style: "btn btn-primary",
     displayName: "OnePak Follow-Up",
+  },
+  {
+    id: "OnePakFollowUp2",
+    content: `Hi XXXX, this is a follow-up\n\nThe order # XXXXXX is showing as delivered to XXXXXX on XXXXX. Labels are not yet printed by the employee and a pickup has not yet been scheduled for this OnePak.\n\nPlease let the exiting team member know that the return labels needs to be printed following directions emailed by OnePak and a pickup needs to be scheduled by going to http://www.dellreturncenter.com/pickups and entering their OnePak order information, this may help them to stay safe at home during these difficult times.\n\nThanks in advance for your assistance.\n`,
+    style: "btn btn-primary",
+    displayName: "OnePak Follow-Up 2",
+    new: true
   },
   {
     id: "ONEPAKFOLLOW-UP–HRNOTIFIER",
@@ -237,15 +244,12 @@ body = document.getElementById("containerBotones");
 function getButtons(list) {
   var contenedor = document.getElementById("containerBotones");
   for (button in list) {
-    contenedor.innerHTML += `<a id="${
-      list[button].id
-    }" data-toggle='tooltip' data-placement='bottom' onclick="copyText(listOfButtons[${[
-      button,
-    ]}].content)" class="col-sm ${list[button].style}" title='${
-      list[button].content
-    }'>${
-      list[button].new ? '<span class="badge badge-secondary">New</span>' : ""
-    }${list[button].displayName}</a>`;
+    contenedor.innerHTML += `<a id="${list[button].id
+      }" data-toggle='tooltip' data-placement='bottom' onclick="copyText(listOfButtons[${[
+        button,
+      ]}].content)" class="col-sm ${list[button].style}" title='${list[button].content
+      }'>${list[button].new ? '<span class="badge badge-secondary">New</span>' : ""
+      }${list[button].displayName}</a>`;
   }
 }
 
