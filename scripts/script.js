@@ -252,7 +252,7 @@ var listOfButtons = [
   {
     name: "OnePakAlready",
     displayName: `OnePak Already Created`,
-    content: `Thank you XXXX for your response,\n\nI’ve double-checked and a OnePak order has been already placed for this return. I’ve updated our list accordingly and will let you know once the system is marked as Returned in our Leaver Tracker.\n\n`,
+    content: `Thank you XXXX for your response,\n\nI’ve double-checked and a OnePak order has been requested to HR Ops for this return.  I’ve updated our list accordingly and will let you know once the system is marked as Returned in our Leaver Tracker or if further follow-up with employee is required.\n\n`,
     style: `btn btn-info`,
     appName: "lartTemplates"
   },
